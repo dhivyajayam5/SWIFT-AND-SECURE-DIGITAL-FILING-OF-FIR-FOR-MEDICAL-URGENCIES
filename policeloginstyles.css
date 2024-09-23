@@ -1,0 +1,65 @@
+/* policeloginstyles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('starry-background.jpg'); /* Replace with your starry background image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Adjust the padding as needed */
+    width: 350px; /* Adjust the width as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    width: 100%; /* Make sure the input field takes the full width */
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}

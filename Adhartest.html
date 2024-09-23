@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesweb.css">
+    <title>Aadhar Verification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Aadhar Verification</h1>
+        <form id="verification-form">
+
+
+<form action="search.php" method="post">
+
+            <label for="aadharnum">Aadhar Card Number:</label>
+            <input type="text" id="aadharnum" name="aadharnum" required>
+            <div class="camera-container">
+                <video id="camera" autoplay></video>
+                <button id="capture-btn">Capture Verification Image</button>
+            </div>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <img id="captured-image" alt="Captured Image">
+            <button type="submit" id="submit-btn">Submit</button>
+
+</form>
+        </form>
+    </div>
+<div id="result">
+        <!-- Display search results here -->
+    </div>
+    <script src="scriptweb.js"></script>
+</body>
+</html>

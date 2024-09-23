@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecomplaint.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Case Submission</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Case</h1>
+
+        <form id="caseForm" action="processdatadb.php" method="POST" enctype="multipart/form-data">
+  
+
+
+            <div class="form-group">
+                <label for="aadhar">Aadhar Number:</label>
+                <input type="text" id="aadhar" name="aadhar" required>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="case-description">Case Description:</label>
+                <textarea id="case-description" name="case-description" rows="4" required></textarea>
+            </div>
+ 
+             <div class="form-group">
+                <label for="hospital-name">Hospital Name:</label>
+                <input type="text" id="hospital-name" name="hospital-name" required>
+            </div>
+                
+             <div class="form-group">
+                <label for="hospital-city">Hospital City:</label>
+                <input type="text" id="hospital-city" name="hospital-city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="condition">Condition:</label>
+                <select id="condition" name="condition" required>
+                    <option value="serious">Serious</option>
+                    <option value="normal">Normal</option>
+                </select>
+            </div>
+<br>
+            <div id="uuidResult">
+
+             </div>
+            <div class="form-group">
+                <label for="image">Upload Image of Victim:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+<script src="scriptdatadb.js"></script>
+</body>
+</html>

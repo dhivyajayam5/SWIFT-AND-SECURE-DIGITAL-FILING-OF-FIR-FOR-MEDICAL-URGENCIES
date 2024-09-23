@@ -1,0 +1,62 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the tabs container */
+.tabs {
+    display: flex;
+    justify-content: center; /* Center-align the tabs horizontally */
+    align-items: center; /* Center-align the tabs vertically */
+    height: 50px; /* Adjust the height as needed */
+    background-color: #333;
+}
+
+/* Style for the tab buttons */
+.tablinks {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.tablinks:hover {
+    background-color: #555;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/* Active tab */
+.tablinks.active {
+    background-color: #555;
+}
+
+/* Style for complaint items */
+.tabcontent > div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tabcontent > div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tabcontent > div button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tabcontent > div button:hover {
+    background-color: #45a049;
+}

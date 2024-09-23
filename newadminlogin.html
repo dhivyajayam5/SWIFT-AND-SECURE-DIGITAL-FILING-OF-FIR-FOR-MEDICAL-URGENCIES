@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints Dashboard</title>
+    <link rel="stylesheet" href="newadminloginstyles.css">
+</head>
+<body>
+    <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'Registered')">Registered Complaints</button>
+        <button class="tablinks" onclick="openTab(event, 'Approved')">Approved Complaints</button>
+    </div>
+    <div id="Registered" class="tabcontent">
+        <div class="complaint-list" id="complaintList">
+            <!-- Complaints will be displayed here using JavaScript -->
+        </div>
+    </div>
+    <div id="Approved" class="tabcontent">
+        <!-- Approved complaints will be displayed here -->
+    </div>
+    <script src="newadminloginscript.js"></script>
+</body>
+</html>
